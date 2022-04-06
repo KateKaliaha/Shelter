@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('./assets/fonts/georgia.ttf');
+    /* src: url('assets/fonts/georgia.ttf'); */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Georgia-bold';
+    src: url('./assets/fonts/georgia.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('./assets/fonts/arial.ttf');
+    /* src: url('assets/fonts/arialmt.ttf'); */
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Georgia';
+    margin: 0 auto;
+}
+header {
+    background: #FFFFFF;
+}
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 31px;
+    padding-bottom: 30px;
+    width: calc(100% - 6.25%);
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0;
+    padding-bottom: 9px;
+}
+
+.logo p {
+    font-family: 'Arial';
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #292929;
+    margin: 0 auto;
+    padding-left: 4px;
+    display: flex;
+   flex-wrap: nowrap; 
+}
+.header-nav {
+    margin-left: auto;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+}
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 443px;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 160%;
+    
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.nav-link {
+    text-decoration: none;  
+    color: #545454;
+}
+
+
+.last-child {
+    margin-right: 0px;
+}
+.nav-link {
+    padding-bottom: 4px;
+}
+
+.nav-item a:hover {
+    color: #292929;
+}
+.active {
+    border-bottom: 2px solid #F1CDB3;
+    color: #292929;
+} 
+
+.main-pets {
+    padding: 80px 40px 100px;
+    background: #F6F6F6;
+}
+
+.pets-content {
+    margin: o auto;
+}
+
+.content-header {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+text-align: center;
+letter-spacing: 0.06em;
+color: #545454;
+width: 400px;
+display: flex;
+align-items: center;
+margin: 0 auto;
+padding-bottom: 59px;
+}
+
+.cards-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+}
+
+
+.pet {
+    cursor: pointer;
+    transition: 0.3s;
+    background: #FAFAFA;
+}
+.pet-picture {
+    width: 270px;
+    height: 270px;
+    border-radius: 9px 9px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.pet:hover {
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: #FFFFFF;
+}
+
+.katrine {
+    background: url('/assets/images/pets-katrine.png');
+}
+
+.jennifer {
+    background: url('/assets/images/pets-jennifer.png');
+}
+
+.woody {
+    background: url('/assets/images/pets-woody.png');
+}
+
+.sophia {
+    background: url('/assets/images/pets-sophia.png');
+}
+
+.timmy {
+    background: url('/assets/images/pets-timmy.png');
+}
+
+.charly {
+    background: url('/assets/images/pets-charly.png');
+}
+
+.scarlett {
+    background: url('/assets/images/pets-scarlet.png');
+}
+
+.freddie {
+    background: url('/assets/images/pets-freddie.png');
+}
+.pet {
+    background: #FAFAFA;
+    height: 435px;
+}
+.pet-name {
+    padding-top: 29px;
+    padding-bottom: 30px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.pet-btn {
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+.pet-btn:hover {
+    background-color: #FDDCC4;
+    border: none;
+}
+
+.pet-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    background: url('/assets/images/footer-background.png');
+    background-repeat: no-repeat;
+}
+
+.footer-content {
+    display: flex;
+    margin-left: 41px;
+    margin-right: 40px;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+    width: 278px;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.footer-header {
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.059em;
+color: #FFFFFF;
+margin: 0;
+height: 90px;
+margin-top: 16px;
+}
+.header-contacts {
+     margin-bottom: 40px;
+}
+
+.footer-text {
+    width: 251px;
+    height: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-img {
+    width: 40px;
+    height: 32px;
+    margin-right: 20px;
+
+}
+
+.footer-link {
+    margin: 0;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+color: #F1CDB3;
+cursor: pointer;
+text-decoration: none;
+
+}
+
+.footer-text1 {
+    width: 339px;
+    height: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footer-locations {
+    width: 302px;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.locations-header {
+    letter-spacing: 0.06em
+}
+.footer-img1 {
+    width: 22px;
+    height: 32px;
+    margin-right: 20px;
+
+}
+
+.footer-picture {
+    width: 300px;
+height: 310px;
+background: url('/assets/images/footer-puppy.png');
+background-repeat: no-repeat;
+}
+
+.footer-text2 {
+    width: 302px;
+    height: 46px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.header-contacts2 {
+    margin-bottom: 34px;
+}
+
+.footer-text3 {
+    width: 302px;
+    height: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
