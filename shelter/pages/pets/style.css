@@ -34,6 +34,8 @@ body {
 }
 header {
     background: #FFFFFF;
+    position: sticky;
+    top: 0;
 }
 .header-wrapper {
     display: flex;
@@ -44,7 +46,10 @@ header {
     margin: 0 auto;
 }
 
-
+.link-logo {
+    text-decoration: none;  
+   
+}
 h1 {
     font-style: normal;
     font-weight: 400;
@@ -151,6 +156,7 @@ padding-bottom: 59px;
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 30px;
+    padding-bottom: 60px;
 }
 
 
@@ -236,7 +242,7 @@ padding-bottom: 59px;
    
 }
 
-.pet-btn:hover {
+.pet:hover .pet-btn {
     background-color: #FDDCC4;
     border: none;
 }
@@ -244,6 +250,55 @@ padding-bottom: 59px;
 .pet-btn-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.navigation {
+width: 340px;
+margin: 0 auto;
+display: flex;
+    justify-content: space-between;
+}
+
+.navigation-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    padding: 0;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+letter-spacing: 0.06em;
+    
+}
+
+.no-active {
+    color: #CDCDCD;
+    border: 2px solid #CDCDCD;
+}
+
+.active-btn {
+    background: #F1CDB3;
+    border: none;
+color: #292929;
+
+}
+
+.left-btn {
+    border: 2px solid #F1CDB3;
+    color: #292929;
+background-color: transparent;
+cursor: pointer;
+}
+
+.left-btn:hover {
+    background: #F1CDB3;
+    border: none;
 }
 .footer {
     background: url('/assets/images/footer-background.png');

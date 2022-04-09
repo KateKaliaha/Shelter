@@ -388,10 +388,14 @@ width: 300px;
    
 }
 
-.pet-btn:hover {
+.pet:hover .pet-btn {
     background-color: #FDDCC4;
     border: none;
 }
+/* .pet-btn:hover {
+    background-color: #FDDCC4;
+    border: none;
+} */
 
 .pet-btn-wrapper {
     display: flex;
@@ -489,7 +493,10 @@ width: 300px;
      padding-top: 30px;
 } 
 
-
+.donat-link {
+        text-decoration: none;  
+        color: #545454;
+}
 .donation-wrapper {
    display: flex;
    justify-content: space-between;
