@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'Georgia';
-    src: url('./assets/fonts/georgia.ttf');
+    src: url('../../assets/fonts/georgia.ttf');
     /* src: url('assets/fonts/georgia.ttf'); */
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Georgia-bold';
-    src: url('./assets/fonts/georgia.ttf');
+    src: url('../../assets/fonts/georgia.ttf');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Arial';
-    src: url('./assets/fonts/arial.ttf');
+    src: url('../../assets/fonts/arial.ttf');
     /* src: url('assets/fonts/arialmt.ttf'); */
     font-weight: 400;
 }
@@ -178,35 +178,35 @@ padding-bottom: 59px;
 }
 
 .katrine {
-    background: url('/assets/images/pets-katrine.png');
+    background: url('../../assets/images/pets-katrine.png');
 }
 
 .jennifer {
-    background: url('/assets/images/pets-jennifer.png');
+    background: url('../../assets/images/pets-jennifer.png');
 }
 
 .woody {
-    background: url('/assets/images/pets-woody.png');
+    background: url('../../assets/images/pets-woody.png');
 }
 
 .sophia {
-    background: url('/assets/images/pets-sophia.png');
+    background: url('../../assets/images/pets-sophia.png');
 }
 
 .timmy {
-    background: url('/assets/images/pets-timmy.png');
+    background: url('../../assets/images/pets-timmy.png');
 }
 
 .charly {
-    background: url('/assets/images/pets-charly.png');
+    background: url('../../assets/images/pets-charly.png');
 }
 
 .scarlett {
-    background: url('/assets/images/pets-scarlet.png');
+    background: url('../../assets/images/pets-scarlet.png');
 }
 
 .freddie {
-    background: url('/assets/images/pets-freddie.png');
+    background: url('../../assets/images/pets-freddie.png');
 }
 .pet {
     background: #FAFAFA;
@@ -301,7 +301,7 @@ cursor: pointer;
     border: none;
 }
 .footer {
-    background: url('/assets/images/footer-background.png');
+    background: url('../../assets/images/footer-background.png');
     background-repeat: no-repeat;
 }
 
@@ -395,7 +395,7 @@ text-decoration: none;
 .footer-picture {
     width: 300px;
 height: 310px;
-background: url('/assets/images/footer-puppy.png');
+background: url('../../assets/images/footer-puppy.png');
 background-repeat: no-repeat;
 }
 
