@@ -419,3 +419,82 @@ background-repeat: no-repeat;
     align-items: center;
     
 }
+
+@media (max-width: 769px)  {
+    * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    
+    
+    }
+  
+    body {
+        max-width: 768px;
+    }
+
+    
+    header {
+       /* position: absolute; */
+        overflow: hidden;
+        /* background: url('../../assets/images/start-screen-gradient-background.png'); */
+    }
+
+    .header-wrapper {  
+        padding-top: 30px;
+        width: calc(100% - 60px);
+       
+    }
+
+    .main-pets {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 76px;
+    }
+
+    .pets-content {
+        width: calc(100% - 188px);
+        margin: 0 auto;
+    }
+    .content-header {
+        padding-bottom: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        /* grid-column-gap: 40px;
+        grid-row-gap: 30px;
+        padding-bottom: 60px; */
+        padding-bottom: 40px;
+    }
+
+    .pet:nth-child(7),
+    .pet:nth-child(8) {
+        display: none;
+    }
+
+    .footer {
+        background: url('../../assets/images/footer-gradient-background-768.png');
+    }
+    .footer-content {
+        width: calc(100% - 60px);
+        padding-top: 30px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-contacts {
+       margin-right: 60px;
+      
+    }
+    
+    .footer-header {
+        margin-top: 0;
+    }
+    
+    .footer-picture {
+      margin-top: 25px;
+    }
+}

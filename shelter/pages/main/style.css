@@ -718,10 +718,7 @@ background-repeat: no-repeat;
     
     
     }
-    /* body {
-        word-break: break-all;
-      } */
-
+  
     body {
         max-width: 768px;
     }
