@@ -2,7 +2,7 @@ const itemLink = document.querySelectorAll('.nav-link');
 const navList = document.querySelector('.nav-list');
 const btnBurger = document.querySelector('.burger');
 const spanBurger = document.querySelectorAll('.line');
-const headerNav = document.querySelector('.header-nav')
+const headerNav = document.querySelector('.header-nav');
 
 
 function changeStatusLink (event) {
@@ -31,12 +31,15 @@ btnBurger.addEventListener('click', function(){
 	// menu.classList.toggle('active');
 })
 
-(function (){
-    if(window.innerWidth<=768) {
-        for (let i = 0; i < navList.length; i += 1)
-        navList[i].addEventListener('click', () => {
-            navList.classList.remove('active-nav')
-        });
-    }
-} ())
+if(window.innerWidth<=768) {
+navList.addEventListener('click', function() {
+   
+        for (let i = 0; i < itemLink.length; i += 1){
+            btnBurger.classList.remove('active-btn');
+            headerNav.classList.remove('active-nav')
+        }
+    })
+}
+    
+
 
