@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="../../assets/icons/first.ico" >
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="header-wrapper" id="shelter">
             <div class="logo">
@@ -78,27 +78,77 @@
                     <div class="pets-button left-btn"><button class="slider-btn left">&#10142;</button>
                     </div>
                     <div class="pets-item pets-child">
-                    <div class="pet">
-                        <div class="pet-picture katrine"></div>
+                        <div class="carousel">
+                            <div class="carousel-item" id="left-item">
+                                <div class="pet" id="pp1">
+                                    <div class="pet-picture sophia" ><img class="pet-picture-img" src="../../assets/images/pets-sophia.png" alt="pet"></div>
+                                    <div class="pet-name">Sophia</div>
+                                    <div class="pet-btn-wrapper">
+                                        <button class="pet-btn">Learn more</button>
+                                    </div>
+                                </div>
+                                <div class="pet" id="pp3">
+                                    <div class="pet-picture scarlett" ><img class="pet-picture-img" src="../../assets/images/pets-scarlet.png" alt="pet"></div>
+                                    <div class="pet-name">Scarlett</div>
+                                    <div class="pet-btn-wrapper">
+                                        <button class="pet-btn">Learn more</button>
+                                    </div>
+                                </div>
+                                <div class="pet" id="p5">
+                                    <div class="pet-picture timmy" ><img class="pet-picture-img" src="../../assets/images/pets-timmy.png" alt="pet"></div>
+                                    <div class="pet-name">Timmy</div>
+                                    <div class="pet-btn-wrapper">
+                                        <button class="pet-btn">Learn more</button>
+                                    </div>
+                                </div>
+            </div>
+            <div class="carousel-item" id="active-item">
+                    <div class="pet" id="p4">
+                        <div class="pet-picture katrine" ><img class="pet-picture-img" src="../../assets/images/pets-katrine.png" alt="pet"></div>
                         <div class="pet-name">Katrine</div>
                         <div class="pet-btn-wrapper">
                             <button class="pet-btn">Learn more</button>
                         </div>
                     </div>
-                    <div class="pet">
-                        <div class="pet-picture jennifer"></div>
+                    <div class="pet" id="pp0">
+                        <div class="pet-picture jennifer" ><img class="pet-picture-img" src="../../assets/images/pets-jennifer.png" alt="pet"></div>
                         <div class="pet-name">Jennifer</div>
                         <div class="pet-btn-wrapper">
-                        <button class="pet-btn">Learn more</button>
+                            <button class="pet-btn">Learn more</button>
+                        </div>
                     </div>
-                    </div>
-                    <div class="pet">
-                        <div class="pet-picture woody"></div>
+                    <div class="pet" id="pp2">
+                        <div class="pet-picture woody" ><img class="pet-picture-img" src="../../assets/images/pets-woody.png" alt="pet"></div>
                         <div class="pet-name">Woody</div>
                         <div class="pet-btn-wrapper">
-                        <button class="pet-btn">Learn more</button>
+                            <button class="pet-btn">Learn more</button>
+                        </div>
                     </div>
+            </div>
+            <div class="carousel-item" id="right-item">
+                    <div class="pet" id="p6">
+                        <div class="pet-picture freddie" ><img class="pet-picture-img" src="../../assets/images/pets-freddie.png" alt="pet"></div>
+                        <div class="pet-name">Freddie</div>
+                        <div class="pet-btn-wrapper">
+                            <button class="pet-btn">Learn more</button>
+                        </div>
                     </div>
+                    <div class="pet" id="pp7">
+                        <div class="pet-picture charly" ><img class="pet-picture-img" src="../../assets/images/pets-charly.png" alt="pet"></div>
+                        <div class="pet-name">Charly</div>
+                        <div class="pet-btn-wrapper">
+                            <button class="pet-btn">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="pet" id="pp8">
+                        <div class="pet-picture charly" ><img class="pet-picture-img" src="../../assets/images/pets-charly.png" alt="pet"></div>
+                        <div class="pet-name">Charly</div>
+                        <div class="pet-btn-wrapper">
+                            <button class="pet-btn">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
                 </div>
                 <div class="pets-button right-btn"><button class="slider-btn">&#10142;</button></div>
                 </div>
@@ -212,6 +262,7 @@
     </div>
     
 </footer>
+<div class="modal"></div>
 
     <script type = "module" src="./script.js"></script>
 </body>

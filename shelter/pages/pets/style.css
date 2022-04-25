@@ -175,6 +175,13 @@ padding-bottom: 59px;
     background-repeat: no-repeat;
 }
 
+.pet-picture-img {
+    border-radius: 9px 9px 0px 0px;
+    width: 270px;
+    height: 270px;
+}
+
+
 .pet:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     background: #FFFFFF;
@@ -293,17 +300,29 @@ color: #292929;
 
 }
 
-.left-btn {
+.right-btn {
     border: 2px solid #F1CDB3;
     color: #292929;
 background-color: transparent;
 cursor: pointer;
 }
 
+.active-left-btn {
+    border: 2px solid #F1CDB3;
+    color: #292929;
+background-color: transparent;
+cursor: pointer;
+}
+
+/* .active-left-btn:hover {
+    background: #F1CDB3;
+    border: none;
+} */
+/* 
 .left-btn:hover {
     background: #F1CDB3;
     border: none;
-}
+} */
 .footer {
     background: url('../../assets/images/footer-background.png');
     background-repeat: no-repeat;
@@ -424,6 +443,142 @@ background-repeat: no-repeat;
     
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.6);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal.open {
+    display: flex;
+  }
+
+  .modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .modal-container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: #fafafa;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  
+  .button-modal {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #f1cdb3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-image: url("../../assets/images/Cross.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: auto;
+    cursor: pointer;
+    position: absolute;
+    left: 98.8%;
+    top: -10.9%;
+  }
+
+
+  .button-modal.active-modal {
+    background-color: #fddcc4;
+    border: none;
+  }
+  
+  .modal-img {
+    height: 500px;
+  }
+  
+  .modal-content {
+    width: 351px;
+    height: 363px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 29px;
+  }
+  
+  .modal-title {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .modal-subtitle {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+  
+  .modal-text {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    height: 102px;
+  }
+  
+  .modal-list {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding-left: 15px;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .modal-list > li::marker {
+    color: #f1cdb3;
+  }
+  
+  .span {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+
+  body.active {
+    overflow-y: hidden;
+  }
+
 @media (max-width: 1279px)  {
     * {
         padding: 0;
@@ -506,6 +661,41 @@ background-repeat: no-repeat;
     .footer-picture {
       margin-top: 25px;
     }
+    .modal-container {
+        display: flex;
+        width: 630px;
+        height: 350px;
+      }
+    
+      .modal-img {
+        height: 350px;
+      }
+    
+      .modal-content {
+        width: 263px;
+        height: 303px;
+        margin-top: 12px;
+        margin-left: 10px;
+      }
+    
+      .modal-list {
+        height: 87px;
+        width: 154px;
+      }
+    
+      .modal-text {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+      }
+    
+      .button-modal {
+        left: 98.4%;
+        top: -14.1%;
+      }
 }
 
 
@@ -525,11 +715,11 @@ background-repeat: no-repeat;
         left: 0; 
         width: 100%;
         height: 823px;
-        background: #292929;
+        
         z-index: 2;
         transform: translateX(100%);
-        transition: transform 0.5s; 
-   
+        transition: transform 0.5s ease-in-out; 
+        background-color: #FAFAFA;
 }
 
 
@@ -555,7 +745,7 @@ background-repeat: no-repeat;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	/* background-color: #222222; */
-	transition: all 0.5s;
+	transition: all 0.5s ease-in-out;
     /* transform: rotate(90deg); */
 }
 
@@ -577,35 +767,43 @@ background-repeat: no-repeat;
     transform: rotate(-90deg);
     left: 34%;
     top: 50%;
-    border: 1px solid #FFFFFF;
+    /* border: 1px solid #FFFFFF; */
 }
 .burger.active-btn span:nth-of-type(2) {
 	left: calc(50% - 25px);
     transform: rotate(-90deg);
     position: absolute;
-    border: 1px solid #FFFFFF;
+    /* border: 1px solid #FFFFFF; */
 }
 .burger.active-btn span:nth-of-type(3) {
 	left: calc(50% - 15px);
     position: absolute;
     transform: rotate(-90deg);
-    border: 1px solid #FFFFFF;
+    /* border: 1px solid #FFFFFF; */
 }
 
 .header-nav.active-nav {
 	transform: translateX(0);
     display: flex;
     flex-direction: column;
-    
+    height: 100%;
 } 
+.list {
+   
+    height: 100%;
+}
+.active-logot {
+    margin-left: auto;
+    margin-right: 43px;
+}
+
 .nav-list {
     flex-direction: column;
-    /* justify-content: center;
-    align-items: stretch; */
     padding-top: 233px;
-    width: 243px;
-    margin-left: 39px;
-   
+    width: 320px;
+    padding-right: 39px;
+    margin-left: auto;
+    height: 100%;
 }
 
 .nav-item {
@@ -731,18 +929,18 @@ height: 100%;
     background: transparent;
 }
 
-.nav-link {
+/* .nav-link {
     text-decoration: none;  
     color: #CDCDCD;
-}
+} */
 
 
-.nav-item a:hover {
+/* .nav-item a:hover {
     color: #FAFAFA;
-}
+} */
 .active {
     border-bottom: 2px solid #F1CDB3;
-    color: #FAFAFA;
+    /* color: #FAFAFA; */
 } 
 
 .active-logo,
@@ -752,14 +950,46 @@ height: 100%;
 
 .active-logo h1{
     z-index: 5;
-    color: #F1CDB3;
+    /* color: #F1CDB3; */
 }
 
 .active-logo p{
 
     z-index: 5;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
+.modal-container  {
+    display: flex;
+    width: 240px;
+    height: 341px;
+    justify-content: center;
+  }
 
+  .modal-img {
+    display: none;
+  }
+
+  .button-modal{
+    left: 91.3%;
+    top: -15.2%;
+  }
+
+  .modal-content {
+    width: 240px;
+    height: 341px;
+    margin: 0;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .modal-text {
+    text-align: justify;
+    height: 112px;
+  }
+
+  .list-item {
+    padding: 0;
+    margin-right: 34px;
+  }
 }
