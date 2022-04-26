@@ -99,53 +99,63 @@ const pet = [
   ]
 
 
+//Burger
 
-
-const itemLink = document.querySelectorAll('.nav-link');
-const navList = document.querySelector('.nav-list');
 const btnBurger = document.querySelector('.burger');
-const spanBurger = document.querySelectorAll('.line');
-const headerNav = document.querySelector('.header-nav');
+const navWrapper = document.querySelector('.list');
+const body = document.querySelector('.body');
+const navList = document.querySelector('.nav-list');
+const itemLink = document.querySelectorAll('.nav-link');
 const logo = document.querySelector('.link-logo')
 
 
 
+// const spanBurger = document.querySelectorAll('.line');
+
+
+btnBurger.addEventListener('click', function () {
+
+  navWrapper.classList.toggle('active-nav');
+	btnBurger.classList.toggle('active-btn');
+  body.classList.toggle("active");
+  logo.classList.toggle("active-logo");
+})
+
+
+navWrapper.addEventListener('click', (event) => {
+  if (event.target.classList.contains('list' || 'nav-link')) {
+    navWrapper.classList.toggle('active-nav');
+    body.classList.toggle("active");
+    btnBurger.classList.toggle('active-btn');
+    logo.classList.toggle("active-logo");
+  }
+})
 
 
 function changeStatusLink (event) {
     if (event.target.classList.contains('nav-link')) {
-        itemLink.forEach(el => el.classList.remove('active'));
-        event.target.classList.add('active')
+      if(window.innerWidth >= 768) {
+        itemLink.forEach (el => el.classList.remove('active'));
+        event.target.classList.add('active');
+      } else {
+        itemLink.forEach (el => el.classList.remove('active'));
+        event.target.classList.add('active');
+        navWrapper.classList.toggle('active-nav');
+        body.classList.toggle("active");
+        btnBurger.classList.toggle('active-btn');
+        logo.classList.toggle("active-logo");
+      }
     }
 }
 
 navList.addEventListener('click', changeStatusLink)
-
-btnBurger.addEventListener('click', function(){
-	btnBurger.classList.toggle('active-btn');
-    headerNav.classList.toggle('active-nav');
-    logo.classList.toggle('active-logo')
-    body.classList.toggle("active");
-    setTimeout (logo.classList.toggle("active-logot"))
-})
-
-if(window.innerWidth<=768) {
-    navList.addEventListener('click', function() {
-       
-            for (let i = 0; i < itemLink.length; i += 1){
-                btnBurger.classList.remove('active-btn');
-                headerNav.classList.remove('active-nav');
-                logo.classList.remove('active-logo')
-            }
-        })
-    }
 
 
 
      //modal window
 
      const modal = document.querySelector(".modal");
-     const body = document.querySelector(".body");
+    //  const body = document.querySelector(".body");
      const modalContainer = document.querySelector(".modal-container");
      let cardPets = document.querySelectorAll(".pet");
      
